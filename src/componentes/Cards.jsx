@@ -13,6 +13,7 @@ const ProjectName = styled.div`
     color: #664003;
     font-weight: bold;
     font-size: 18px;
+    margin:15px;
     `
 
  const Card = styled.div`

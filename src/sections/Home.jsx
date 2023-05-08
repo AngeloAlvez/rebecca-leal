@@ -16,9 +16,16 @@ width: 250px;
 height: 250px;
 border-radius: 80%;
 overflow: hidden;
+@media (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+  }
 `
 const Img = styled.img`
 width: 250px;
+@media (max-width: 768px) {
+    width: 180px;
+  }
 
 `
 
@@ -47,6 +54,17 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 text-decoration: none;
+&:hover {
+    opacity: 0.8;
+  }
+&:active {
+box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.4) inset;
+}
+
+
+@media (min-width: 768px) {
+    width: 500px;
+  }
 `
 const ButtonWrapper = styled.span`
 width: 0;
