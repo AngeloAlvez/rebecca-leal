@@ -43,6 +43,12 @@ const cards = [
         linkFigma: 'link do primeiro figma',
         linkNet: 'link do primeiro rodando'
     },
+    {
+        image: construction,
+        name: 'Projeto 01',
+        linkFigma: 'link do primeiro figma',
+        linkNet: 'link do primeiro rodando'
+    },
 ]
 const listaDeCards = cards.map((card, index)=>{
     return(

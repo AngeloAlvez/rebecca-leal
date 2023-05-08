@@ -5,10 +5,6 @@ import { Projetos } from './sections/Projetos';
 import './reset.css'
 import manchinha from './assets/mancha.svg';
 const Background = styled.div`
-width: 100vw;
-height: 100%;
-background-color: #FBF6EE;
-z-index: 9;
 `
 const ManchaSuperior = styled.img`
 position: fixed;

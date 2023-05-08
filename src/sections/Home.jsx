@@ -69,7 +69,7 @@ export const Home = () => {
             <Subtitulo>UX/UI Designer</Subtitulo>
             <Subtitulo>Designer de moda</Subtitulo>
     
-            <ButtonSocialMedia href='http://google.com'><ButtonWrapper><AiOutlineMail /></ButtonWrapper>E-mail<ButtonWrapper></ButtonWrapper></ButtonSocialMedia>
+            <ButtonSocialMedia href='href="mailto:alealrebecca@gmail.com'><ButtonWrapper><AiOutlineMail /></ButtonWrapper>E-mail<ButtonWrapper></ButtonWrapper></ButtonSocialMedia>
             <ButtonSocialMedia href='http://google.com'><ButtonWrapper><RiLinkedinBoxLine /></ButtonWrapper>LinkedIn<ButtonWrapper></ButtonWrapper></ButtonSocialMedia>
             <ButtonSocialMedia href='http://google.com'><ButtonWrapper><BsWhatsapp /></ButtonWrapper>WhatsApp<ButtonWrapper></ButtonWrapper></ButtonSocialMedia>
 
