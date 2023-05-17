@@ -36,7 +36,7 @@ align-items: center;
 opacity:${(props) => (props.active ? '1': '0.5')};
 text-underline-offset: 6px;
 text-decoration: ${(props) => (props.active ? 'underline': 'none')};
-
+cursor: pointer;
 `
 function App() {
   const [isHome, setIsHome] = useState(true)
@@ -55,7 +55,7 @@ function App() {
      
       <Menu>
         <MenuButton active={isHome} onClick={menuToHome}>HOME</MenuButton>
-        <MenuButton active={!isHome} onClick={menuToProjetos}>PORTIFÓLIO</MenuButton>
+        <MenuButton active={!isHome} onClick={menuToProjetos}>PORTFÓLIO</MenuButton>
       </Menu>
       <section>
       {isHome? <Home /> : <Projetos /> }

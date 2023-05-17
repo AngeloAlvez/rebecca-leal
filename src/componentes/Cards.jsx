@@ -1,10 +1,13 @@
 import styled from 'styled-components'
-import construction from '../assets/manutencao.png'
-const ProjectItem = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-bottom: 50px;
+import creativeDesign from '../assets/thumb-creative-design.png'
+
+const ProjectItem = styled.a`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    cursor: pointer;
+    text-decoration: none;
  `
 const ProjectName = styled.div`
     display: flex;
@@ -17,37 +20,44 @@ const ProjectName = styled.div`
     `
 
  const Card = styled.div`
- box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
- width: 300px;
- height: 300px;
- background-color: #eee9e6;
- overflow: hidden;
+    border: none;
+    width: 808px;
+    height: 632px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    overflow: hidden;
+    @media (max-width: 1024px) {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
  `
 const ProjectNameWrapper = styled.div`
     font-weight: 200;
   
 `
 const Image = styled.img`
-height: 120%;
-opacity: 0.1;
+    width: 100%;
+    &:hover {
+    opacity: 0.7;
+  }
 `
 const cards = [
     {
-        image: construction,
-        name: 'Projeto 01',
-        linkFigma: 'link do primeiro figma',
-        linkNet: 'link do primeiro rodando'
+        image: creativeDesign,
+        name: 'Creative Design',
+        link: 'https://www.behance.net/gallery/170867255/CreativeDesign',
     },
-]
-const listaDeCards = cards.map((card, index)=>{
-    return(
-        <ProjectItem>
-            <ProjectName>{card.name}<ProjectNameWrapper>(em construção)</ProjectNameWrapper></ProjectName>
-            <Card>
-         <Image src={card.image} />
-            </Card>
-            
 
+]
+const listaDeCards = cards.map((item, index)=>{
+    return(
+        <ProjectItem href={item.link}>
+                <ProjectName>{item.name}<ProjectNameWrapper></ProjectNameWrapper></ProjectName>
+                <Card>
+                    <Image src={item.image} />
+                </Card>     
         </ProjectItem>
     )
 })
